@@ -1,0 +1,7 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(68cf865d-2c79-441b-a88a-5845d3b3353c), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 7 Scala sources to C:\Users\hassa\blockbattle\target\scala-3.0.2\classes ...[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 8 s, completed Oct 8, 2021 3:33:06 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
