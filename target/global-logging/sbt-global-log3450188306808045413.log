@@ -1,0 +1,8 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(quit, Some(ae396504-a592-47c0-a24a-e529aa509b18), Some(CommandSource(console0)))[0m
+[0m[[0m[31merror[0m] [0m[0mNot a valid command: quit (similar: exit, about)[0m
+[0m[[0m[31merror[0m] [0m[0mNot a valid project ID: quit[0m
+[0m[[0m[31merror[0m] [0m[0mExpected ':'[0m
+[0m[[0m[31merror[0m] [0m[0mNot a valid key: quit[0m
+[0m[[0m[31merror[0m] [0m[0mquit[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

@@ -1,0 +1,6 @@
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E006] Not Found Error: C:\Users\hassa\blockbattle\src\main\scala\BlockBattle\Game.scala:58:38 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m58 |[0m        window.setBlock(currentBlock, backgroundColorAtDepth(y))[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                      [31m^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                      Not found: backgroundColorAtDepth[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
