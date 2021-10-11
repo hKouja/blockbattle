@@ -85,25 +85,43 @@
 [0m[[0m[0mdebug[0m] [0m[0m	Pos.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Game$.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	BlockWindow$.tasty[0m
-[0m[[0m[0mdebug[0m] [0m[0mRolling back changes to class files.[0m
-[0m[[0m[0mdebug[0m] [0m[0mRemoving generated classes:[0m
-[0m[[0m[0mdebug[0m] [0m[0mRestoring class files: [0m
-[0m[[0m[0mdebug[0m] [0m[0m	KeyControl.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	BlockWindow$BlockWindow$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Pos$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Mole.tasty[0m
-[0m[[0m[0mdebug[0m] [0m[0m	KeyControl$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Pos.tasty[0m
-[0m[[0m[0mdebug[0m] [0m[0m	BlockWindow.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	BlockWindow$BlockWindow$Event$KeyPressed$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	BlockWindow.tasty[0m
-[0m[[0m[0mdebug[0m] [0m[0m	KeyControl.tasty[0m
-[0m[[0m[0mdebug[0m] [0m[0m	BlockWindow$BlockWindow$Event$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	BlockWindow$BlockWindow$Event$KeyPressed.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	BlockWindow$BlockWindow$Event$WindowClosed$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	BlockWindow$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	BlockWindow$BlockWindow$Event$EventType.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Mole.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Pos.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BlockWindow$BlockWindow$Event$KeyPressed.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BlockWindow$BlockWindow$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Game$Color$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BlockWindow$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BlockWindow.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Game$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KeyControl.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	BlockWindow$BlockWindow$Event$Undefined$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BlockWindow$BlockWindow$Event$EventType.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Mole.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Game.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BlockWindow$BlockWindow$Event$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BlockWindow$BlockWindow$Event$KeyPressed$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Pos$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KeyControl$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BlockWindow$BlockWindow$Event$WindowClosed$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Pos.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BlockWindow$BlockWindow$Event$KeyPressed.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BlockWindow$BlockWindow$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Game$Color$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BlockWindow$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BlockWindow.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Game$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KeyControl.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BlockWindow$BlockWindow$Event$Undefined$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BlockWindow$BlockWindow$Event$EventType.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Mole.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Game.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BlockWindow$BlockWindow$Event$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BlockWindow$BlockWindow$Event$KeyPressed$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Pos$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KeyControl$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BlockWindow$BlockWindow$Event$WindowClosed$.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: C:\Users\hassa\blockbattle\target\scala-3.0.2\classes.bak[0m

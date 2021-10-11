@@ -1,9 +1,9 @@
 package BlockBattle
 
 class BlockWindow(
-                 val nbrOfBlocks: (Int, Int),
-                 val title: String = "BLOCK WINDOW",
-                 val blockSize: Int = 14
+                   val nbrOfBlocks: (Int, Int),
+                   val title: String = "BLOCK WINDOW",
+                   val blockSize: Int = 14
                  ):
 
   import introprog.PixelWindow
@@ -19,33 +19,32 @@ class BlockWindow(
   }
 
   def write(
-    text: String,
-    pos: Pos,
-    color: java.awt.Color,
-    textSize: Int = blockSize):
-    Unit = {
-      pixelWindow.drawText(text, pos.x * blockSize, pos.y * blockSize, color, textSize)
-
-      def nextEvent(maxWaitMillis: Int = 10): BlockWindow.Event.EventType = {
-      import BlockWindow.Event._
-      pixelWindow.awaitEvent(maxWaitMillis)
-      pixelWindow.lastEventType match
-        case PixelWindow.Event.KeyPressed => KeyPressed(pixelWindow.lastKey)
-        case PixelWindow.Event.WindowClosed => WindowClosed
-        case _ => Undefined
-    }
+             text: String,
+             pos: Pos,
+             color: java.awt.Color,
+             textSize: Int = blockSize):
+  Unit = {
+    pixelWindow.drawText(text, pos.x * blockSize, pos.y * blockSize, color, textSize)
   }
-  object BlockWindow {
-    def delay(millis: Int): Unit = Thread.sleep(millis)
-    object Event {
-      trait EventType
-
-      case class KeyPressed(key: String) extends EventType
-
-      case object WindowClosed extends EventType
-
-      case object Undefined extends EventType
-    }
+  
+  def nextEvent(maxWaitMillis: Int = 10): BlockWindow.Event.EventType = {
+    import BlockWindow.Event._
+    pixelWindow.awaitEvent(maxWaitMillis)
+    pixelWindow.lastEventType match
+      case PixelWindow.Event.KeyPressed => KeyPressed(pixelWindow.lastKey)
+      case PixelWindow.Event.WindowClosed => WindowClosed
+      case _ => Undefined
   }
+    
+object BlockWindow {
+  def delay(millis: Int): Unit = Thread.sleep(millis)
+  object Event {
+    trait EventType
 
+    case class KeyPressed(key: String) extends EventType
 
+    case object WindowClosed extends EventType
+
+    case object Undefined extends EventType
+  }
+}

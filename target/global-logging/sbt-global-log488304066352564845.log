@@ -11,3 +11,4 @@
 [0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
 [0m[[0m[31merror[0m] [0m[0mTotal time: 2 s, completed Oct 10, 2021 7:49:31 PM[0m
 [0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m

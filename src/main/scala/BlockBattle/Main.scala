@@ -5,7 +5,8 @@ object Main {
 
   def main(args: Array[String]): Unit = {
 
-      println ("HEJ PÅ DEJ")
+    val game = new Game ("left", "right")
+    game.start()
 
   }
 }
