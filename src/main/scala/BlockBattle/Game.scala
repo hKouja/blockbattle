@@ -1,6 +1,6 @@
 package BlockBattle
 
-import BlockBattle.Game.Color.backgroundColorAtDepth
+import BlockBattle.Game.Color.{backgroundColorAtDepth, mole, mole2, sky, worm}
 import BlockBattle.Game.{windowSize, windowTitle}
 
 object Game {
@@ -32,8 +32,8 @@ object Game {
 }
 
 class Game (
-             val leftPlayerName: String = "LEFT",
-             val rightPlayerName: String = "RIGHT"
+             val leftPlayerName: String,
+             val rightPlayerName: String
            ) {
 
   import Game._
@@ -51,7 +51,7 @@ class Game (
     Pos (1,2),
     (0,1),
     Color.mole2,
-    KeyControl("ö", "'", "å", "ä")
+    KeyControl("Left", "Right", "Up", "Down")
   )
 
   def drawWorld() = {
@@ -59,11 +59,16 @@ class Game (
       for (x <- 0 to windowSize._1) {
         var currentBlock: Pos = Pos (x,y)
         window.setBlock(currentBlock, backgroundColorAtDepth(y))
+        draw()
       }
     }
   }
 
-  def eraseBlocks(x1: Int, y1: Int, x2: Int, y2: Int): Unit = {
+
+
+  def eraseBlocks(mole: Mole)(x1: Int, y1: Int, x2: Int, y2: Int): Unit = {
+    x1 == mole.pos.x
+    y1 == mole.pos.y
 
   }
 
@@ -76,11 +81,19 @@ class Game (
     ys == windowSize._2
     ys == skyRange.last
     xs == 0
+  }
 
+  def draw(): Unit = {
+    window.pixelWindow.fill(0,0,windowSize._2,skyRange.last, sky)
   }
 
   def update(mole: Mole): Unit = {
     if (isHere(mole)) mole.reverseDir()
+
+    window.setBlock(mole.nextPos, mole.color)
+    window.setBlock(mole.nextPos, Color.tunnel)
+    mole.move()
+
   }
 
   def handleEvents(): Unit = {
@@ -106,6 +119,7 @@ class Game (
 
     }
   }
+
   def start(): Unit = {
     println("Start digging!")
     println(s"$leftPlayerName ${leftMole.keyControl}")
