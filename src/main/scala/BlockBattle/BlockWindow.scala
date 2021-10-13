@@ -11,7 +11,9 @@ class BlockWindow(
   val pixelWindow = new PixelWindow(nbrOfBlocks._1 * blockSize, nbrOfBlocks._2 * blockSize, title)
 
   def setBlock(pos: Pos, color: java.awt.Color): Unit = {
-    (pos.x * blockSize, pos.y * blockSize)
+
+
+    pixelWindow.fill(pos.x, pos.y, blockSize, blockSize, color)
   }
 
   def getBlock(pos: Pos): java.awt.Color = {

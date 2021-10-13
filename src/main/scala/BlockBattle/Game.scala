@@ -1,6 +1,6 @@
 package BlockBattle
 
-import BlockBattle.Game.Color.{backgroundColorAtDepth, mole, mole2, sky, worm}
+import BlockBattle.Game.Color.{backgroundColorAtDepth, black, grass, mole, mole2, sky, soil, worm}
 import BlockBattle.Game.{windowSize, windowTitle}
 
 object Game {
@@ -39,6 +39,7 @@ class Game (
   import Game._
 
   val window = new BlockWindow(windowSize, windowTitle, blockSize)
+
   val leftMole = new Mole (
     name = leftPlayerName,
     Pos (1,2),
@@ -53,16 +54,6 @@ class Game (
     Color.mole2,
     KeyControl("Left", "Right", "Up", "Down")
   )
-
-  def drawWorld() = {
-    for (y <- 0 to windowSize._2) {
-      for (x <- 0 to windowSize._1) {
-        var currentBlock: Pos = Pos (x,y)
-        window.setBlock(currentBlock, backgroundColorAtDepth(y))
-        draw()
-      }
-    }
-  }
 
 
 
@@ -83,12 +74,29 @@ class Game (
     xs == 0
   }
 
-  def draw(): Unit = {
-    window.pixelWindow.fill(0,0,windowSize._2,skyRange.last, sky)
+  def worm(): Unit = {
+    window.setBlock(pos = Pos(1,2), Color.worm)
+  }
+
+  def paint(): Unit = {
+    window.pixelWindow.fill(0, 0, windowSize._1 * blockSize, skyRange.last * blockSize, sky)
+    window.pixelWindow.fill(0, skyRange.last * blockSize, windowSize._1 * blockSize, grassRange.last + blockSize, grass)
+    window.pixelWindow.fill(0, grassRange.last * blockSize, windowSize._1 * blockSize, windowSize._2 * blockSize, soil)
+  }
+
+  def text(): Unit = {
+    window.write(s"$leftPlayerName's points: ${leftMole.points}", pos = Pos(0,0), black, blockSize)
+    window.write(s"$rightPlayerName's points: ${rightMole.points}", pos = Pos(19,0), black, blockSize)
+
+  }
+
+  def drawWorld() = {
+    paint()
+    text()
   }
 
   def update(mole: Mole): Unit = {
-    if (isHere(mole)) mole.reverseDir()
+    if (isHere(mole)) {mole.reverseDir()}
 
     window.setBlock(mole.nextPos, mole.color)
     window.setBlock(mole.nextPos, Color.tunnel)
@@ -98,11 +106,13 @@ class Game (
 
   def handleEvents(): Unit = {
     var anEvent = window.nextEvent()
-
-    anEvent match {
-      case BlockWindow.Event.KeyPressed(key) => {
-        rightMole.setDir(key)
-        leftMole.setDir(key)
+    while (anEvent != BlockWindow.Event.Undefined) {
+      anEvent match {
+        case BlockWindow.Event.KeyPressed(key) => {
+          rightMole.setDir(key)
+          leftMole.setDir(key)
+        }
+        case BlockWindow.Event.WindowClosed => quit
       }
     }
   }
@@ -114,9 +124,12 @@ class Game (
     while (!quit) {
       val t0 = System.currentTimeMillis
 
+      handleEvents()
       update(leftMole)
       update(rightMole)
 
+      val time = (System.currentTimeMillis - t0).toInt
+      Thread.sleep((delayMillis - time) max 0)
     }
   }
 
