@@ -1,0 +1,446 @@
+[0m2021.10.14 18:43:05 INFO  Started: Metals version 0.10.7 in workspace 'C:\Users\hassa\blockbattle' for client Visual Studio Code 1.61.0.[0m
+[0m2021.10.14 18:43:06 INFO  time: initialize in 0.54s[0m
+[0m2021.10.14 18:43:06 WARN  Build server is not auto-connectable.[0m
+[0m2021.10.14 18:43:06 WARN  no build target for: C:\Users\hassa\blockbattle\src\main\scala\BlockBattle\Game.scala[0m
+[0m2021.10.14 18:43:12 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.10.14 18:43:12 INFO  running 'C:\Users\hassa\AppData\Local\Coursier\cache\jvm\adopt@1.8.0-292\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\hassa\AppData\Local\Temp\metals4916706979165409009\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.10.14 18:43:14 INFO  [info] welcome to sbt 1.5.5 (AdoptOpenJDK Java 1.8.0_292)[0m
+Oct 14, 2021 6:43:16 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: file%3A%2F%2F%2FC%3A%2FUsers%2Fhassa%2Fblockbattle%2Fsrc%2Fmain%2Fscala%2FBlockBattle%2FGame.scala:13: error: ; expected but identifier found
+    import java.awt.Color as JColor
+                          ^
+file%3A%2F%2F%2FC%3A%2FUsers%2Fhassa%2Fblockbattle%2Fsrc%2Fmain%2Fscala%2FBlockBattle%2FGame.scala:13: error: ; expected but identifier found
+    import java.awt.Color as JColor
+                          ^
+	at scala.meta.internal.parsers.Reporter.syntaxError(Reporter.scala:16)
+	at scala.meta.internal.parsers.Reporter.syntaxError$(Reporter.scala:16)
+	at scala.meta.internal.parsers.Reporter$$anon$1.syntaxError(Reporter.scala:22)
+	at scala.meta.internal.parsers.Reporter.syntaxError(Reporter.scala:17)
+	at scala.meta.internal.parsers.Reporter.syntaxError$(Reporter.scala:17)
+	at scala.meta.internal.parsers.Reporter$$anon$1.syntaxError(Reporter.scala:22)
+	at scala.meta.internal.parsers.ScalametaParser.syntaxErrorExpected(ScalametaParser.scala:941)
+	at scala.meta.internal.parsers.ScalametaParser.accept(ScalametaParser.scala:947)
+	at scala.meta.internal.parsers.ScalametaParser.acceptStatSep(ScalametaParser.scala:957)
+	at scala.meta.internal.parsers.ScalametaParser.acceptStatSepOpt(ScalametaParser.scala:961)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:5060)
+	at scala.meta.internal.parsers.ScalametaParser.templateStats(ScalametaParser.scala:5130)
+	at scala.meta.internal.parsers.ScalametaParser.templateStatSeq(ScalametaParser.scala:5110)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateBody$1(ScalametaParser.scala:4945)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.templateBody(ScalametaParser.scala:4945)
+	at scala.meta.internal.parsers.ScalametaParser.templateBodyOpt(ScalametaParser.scala:4953)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateOpt$1(ScalametaParser.scala:4938)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:922)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:4923)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$objectDef$1(ScalametaParser.scala:4682)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.objectDef(ScalametaParser.scala:4674)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:4558)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:4201)
+	at scala.meta.internal.parsers.ScalametaParser.nonLocalDefOrDcl(ScalametaParser.scala:4172)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1$1.applyOrElse(ScalametaParser.scala:5120)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1$1.applyOrElse(ScalametaParser.scala:5114)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:5057)
+	at scala.meta.internal.parsers.ScalametaParser.templateStats(ScalametaParser.scala:5130)
+	at scala.meta.internal.parsers.ScalametaParser.templateStatSeq(ScalametaParser.scala:5110)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateBody$1(ScalametaParser.scala:4945)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.templateBody(ScalametaParser.scala:4945)
+	at scala.meta.internal.parsers.ScalametaParser.templateBodyOpt(ScalametaParser.scala:4953)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateOpt$1(ScalametaParser.scala:4938)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:922)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:4923)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$objectDef$1(ScalametaParser.scala:4682)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.objectDef(ScalametaParser.scala:4674)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:4558)
+	at scala.meta.internal.parsers.ScalametaParser.topLevelTmplDef(ScalametaParser.scala:4540)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$topStat$1.applyOrElse(ScalametaParser.scala:5079)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$topStat$1.applyOrElse(ScalametaParser.scala:5067)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:5057)
+	at scala.meta.internal.parsers.ScalametaParser.topStatSeq(ScalametaParser.scala:5066)
+	at scala.meta.internal.parsers.ScalametaParser.bracelessPackageStats$1(ScalametaParser.scala:5289)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$12(ScalametaParser.scala:5295)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$1(ScalametaParser.scala:5295)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:922)
+	at scala.meta.internal.parsers.ScalametaParser.batchSource(ScalametaParser.scala:5256)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:5239)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:922)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:5238)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:5244)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$2(ScalametaParser.scala:143)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:53)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:143)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.internal.parsers.ScalametaParser$$anon$264.apply(ScalametaParser.scala:5308)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.semanticdb.scalac.ParseOps$XtensionCompilationUnitSource.toSource(ParseOps.scala:17)
+	at scala.meta.internal.semanticdb.scalac.TextDocumentOps$XtensionCompilationUnitDocument.toTextDocument(TextDocumentOps.scala:201)
+	at scala.meta.internal.pc.SemanticdbTextDocumentProvider.textDocument(SemanticdbTextDocumentProvider.scala:51)
+
+[0m2021.10.14 18:43:17 INFO  [info] loading global plugins from C:\Users\hassa\.sbt\1.0\plugins[0m
+Oct 14, 2021 6:43:17 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: file%3A%2F%2F%2FC%3A%2FUsers%2Fhassa%2Fblockbattle%2Fsrc%2Fmain%2Fscala%2FBlockBattle%2FGame.scala:13: error: ; expected but identifier found
+    import java.awt.Color as JColor
+                          ^
+file%3A%2F%2F%2FC%3A%2FUsers%2Fhassa%2Fblockbattle%2Fsrc%2Fmain%2Fscala%2FBlockBattle%2FGame.scala:13: error: ; expected but identifier found
+    import java.awt.Color as JColor
+                          ^
+	at scala.meta.internal.parsers.Reporter.syntaxError(Reporter.scala:16)
+	at scala.meta.internal.parsers.Reporter.syntaxError$(Reporter.scala:16)
+	at scala.meta.internal.parsers.Reporter$$anon$1.syntaxError(Reporter.scala:22)
+	at scala.meta.internal.parsers.Reporter.syntaxError(Reporter.scala:17)
+	at scala.meta.internal.parsers.Reporter.syntaxError$(Reporter.scala:17)
+	at scala.meta.internal.parsers.Reporter$$anon$1.syntaxError(Reporter.scala:22)
+	at scala.meta.internal.parsers.ScalametaParser.syntaxErrorExpected(ScalametaParser.scala:941)
+	at scala.meta.internal.parsers.ScalametaParser.accept(ScalametaParser.scala:947)
+	at scala.meta.internal.parsers.ScalametaParser.acceptStatSep(ScalametaParser.scala:957)
+	at scala.meta.internal.parsers.ScalametaParser.acceptStatSepOpt(ScalametaParser.scala:961)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:5060)
+	at scala.meta.internal.parsers.ScalametaParser.templateStats(ScalametaParser.scala:5130)
+	at scala.meta.internal.parsers.ScalametaParser.templateStatSeq(ScalametaParser.scala:5110)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateBody$1(ScalametaParser.scala:4945)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.templateBody(ScalametaParser.scala:4945)
+	at scala.meta.internal.parsers.ScalametaParser.templateBodyOpt(ScalametaParser.scala:4953)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateOpt$1(ScalametaParser.scala:4938)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:922)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:4923)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$objectDef$1(ScalametaParser.scala:4682)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.objectDef(ScalametaParser.scala:4674)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:4558)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:4201)
+	at scala.meta.internal.parsers.ScalametaParser.nonLocalDefOrDcl(ScalametaParser.scala:4172)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1$1.applyOrElse(ScalametaParser.scala:5120)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1$1.applyOrElse(ScalametaParser.scala:5114)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:5057)
+	at scala.meta.internal.parsers.ScalametaParser.templateStats(ScalametaParser.scala:5130)
+	at scala.meta.internal.parsers.ScalametaParser.templateStatSeq(ScalametaParser.scala:5110)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateBody$1(ScalametaParser.scala:4945)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.templateBody(ScalametaParser.scala:4945)
+	at scala.meta.internal.parsers.ScalametaParser.templateBodyOpt(ScalametaParser.scala:4953)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateOpt$1(ScalametaParser.scala:4938)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:922)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:4923)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$objectDef$1(ScalametaParser.scala:4682)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.objectDef(ScalametaParser.scala:4674)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:4558)
+	at scala.meta.internal.parsers.ScalametaParser.topLevelTmplDef(ScalametaParser.scala:4540)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$topStat$1.applyOrElse(ScalametaParser.scala:5079)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$topStat$1.applyOrElse(ScalametaParser.scala:5067)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:5057)
+	at scala.meta.internal.parsers.ScalametaParser.topStatSeq(ScalametaParser.scala:5066)
+	at scala.meta.internal.parsers.ScalametaParser.bracelessPackageStats$1(ScalametaParser.scala:5289)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$12(ScalametaParser.scala:5295)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$1(ScalametaParser.scala:5295)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:922)
+	at scala.meta.internal.parsers.ScalametaParser.batchSource(ScalametaParser.scala:5256)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:5239)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:922)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:5238)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:5244)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$2(ScalametaParser.scala:143)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:53)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:143)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.internal.parsers.ScalametaParser$$anon$264.apply(ScalametaParser.scala:5308)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.semanticdb.scalac.ParseOps$XtensionCompilationUnitSource.toSource(ParseOps.scala:17)
+	at scala.meta.internal.semanticdb.scalac.TextDocumentOps$XtensionCompilationUnitDocument.toTextDocument(TextDocumentOps.scala:201)
+	at scala.meta.internal.pc.SemanticdbTextDocumentProvider.textDocument(SemanticdbTextDocumentProvider.scala:51)
+
+Oct 14, 2021 6:43:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+Oct 14, 2021 6:43:17 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: file%3A%2F%2F%2FC%3A%2FUsers%2Fhassa%2Fblockbattle%2Fsrc%2Fmain%2Fscala%2FBlockBattle%2FGame.scala:13: error: ; expected but identifier found
+    import java.awt.Color as JColor
+                          ^
+file%3A%2F%2F%2FC%3A%2FUsers%2Fhassa%2Fblockbattle%2Fsrc%2Fmain%2Fscala%2FBlockBattle%2FGame.scala:13: error: ; expected but identifier found
+    import java.awt.Color as JColor
+                          ^
+	at scala.meta.internal.parsers.Reporter.syntaxError(Reporter.scala:16)
+	at scala.meta.internal.parsers.Reporter.syntaxError$(Reporter.scala:16)
+	at scala.meta.internal.parsers.Reporter$$anon$1.syntaxError(Reporter.scala:22)
+	at scala.meta.internal.parsers.Reporter.syntaxError(Reporter.scala:17)
+	at scala.meta.internal.parsers.Reporter.syntaxError$(Reporter.scala:17)
+	at scala.meta.internal.parsers.Reporter$$anon$1.syntaxError(Reporter.scala:22)
+	at scala.meta.internal.parsers.ScalametaParser.syntaxErrorExpected(ScalametaParser.scala:941)
+	at scala.meta.internal.parsers.ScalametaParser.accept(ScalametaParser.scala:947)
+	at scala.meta.internal.parsers.ScalametaParser.acceptStatSep(ScalametaParser.scala:957)
+	at scala.meta.internal.parsers.ScalametaParser.acceptStatSepOpt(ScalametaParser.scala:961)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:5060)
+	at scala.meta.internal.parsers.ScalametaParser.templateStats(ScalametaParser.scala:5130)
+	at scala.meta.internal.parsers.ScalametaParser.templateStatSeq(ScalametaParser.scala:5110)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateBody$1(ScalametaParser.scala:4945)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.templateBody(ScalametaParser.scala:4945)
+	at scala.meta.internal.parsers.ScalametaParser.templateBodyOpt(ScalametaParser.scala:4953)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateOpt$1(ScalametaParser.scala:4938)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:922)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:4923)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$objectDef$1(ScalametaParser.scala:4682)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.objectDef(ScalametaParser.scala:4674)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:4558)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:4201)
+	at scala.meta.internal.parsers.ScalametaParser.nonLocalDefOrDcl(ScalametaParser.scala:4172)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1$1.applyOrElse(ScalametaParser.scala:5120)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1$1.applyOrElse(ScalametaParser.scala:5114)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:5057)
+	at scala.meta.internal.parsers.ScalametaParser.templateStats(ScalametaParser.scala:5130)
+	at scala.meta.internal.parsers.ScalametaParser.templateStatSeq(ScalametaParser.scala:5110)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateBody$1(ScalametaParser.scala:4945)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.templateBody(ScalametaParser.scala:4945)
+	at scala.meta.internal.parsers.ScalametaParser.templateBodyOpt(ScalametaParser.scala:4953)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateOpt$1(ScalametaParser.scala:4938)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:922)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:4923)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$objectDef$1(ScalametaParser.scala:4682)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.objectDef(ScalametaParser.scala:4674)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:4558)
+	at scala.meta.internal.parsers.ScalametaParser.topLevelTmplDef(ScalametaParser.scala:4540)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$topStat$1.applyOrElse(ScalametaParser.scala:5079)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$topStat$1.applyOrElse(ScalametaParser.scala:5067)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:5057)
+	at scala.meta.internal.parsers.ScalametaParser.topStatSeq(ScalametaParser.scala:5066)
+	at scala.meta.internal.parsers.ScalametaParser.bracelessPackageStats$1(ScalametaParser.scala:5289)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$12(ScalametaParser.scala:5295)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$1(ScalametaParser.scala:5295)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:922)
+	at scala.meta.internal.parsers.ScalametaParser.batchSource(ScalametaParser.scala:5256)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:5239)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:922)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:5238)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:5244)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$2(ScalametaParser.scala:143)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:53)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:143)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.internal.parsers.ScalametaParser$$anon$264.apply(ScalametaParser.scala:5308)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.semanticdb.scalac.ParseOps$XtensionCompilationUnitSource.toSource(ParseOps.scala:17)
+	at scala.meta.internal.semanticdb.scalac.TextDocumentOps$XtensionCompilationUnitDocument.toTextDocument(TextDocumentOps.scala:201)
+	at scala.meta.internal.pc.SemanticdbTextDocumentProvider.textDocument(SemanticdbTextDocumentProvider.scala:51)
+
+Oct 14, 2021 6:43:18 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: file%3A%2F%2F%2FC%3A%2FUsers%2Fhassa%2Fblockbattle%2Fsrc%2Fmain%2Fscala%2FBlockBattle%2FGame.scala:13: error: ; expected but identifier found
+    import java.awt.Color as JColor
+                          ^
+file%3A%2F%2F%2FC%3A%2FUsers%2Fhassa%2Fblockbattle%2Fsrc%2Fmain%2Fscala%2FBlockBattle%2FGame.scala:13: error: ; expected but identifier found
+    import java.awt.Color as JColor
+                          ^
+	at scala.meta.internal.parsers.Reporter.syntaxError(Reporter.scala:16)
+	at scala.meta.internal.parsers.Reporter.syntaxError$(Reporter.scala:16)
+	at scala.meta.internal.parsers.Reporter$$anon$1.syntaxError(Reporter.scala:22)
+	at scala.meta.internal.parsers.Reporter.syntaxError(Reporter.scala:17)
+	at scala.meta.internal.parsers.Reporter.syntaxError$(Reporter.scala:17)
+	at scala.meta.internal.parsers.Reporter$$anon$1.syntaxError(Reporter.scala:22)
+	at scala.meta.internal.parsers.ScalametaParser.syntaxErrorExpected(ScalametaParser.scala:941)
+	at scala.meta.internal.parsers.ScalametaParser.accept(ScalametaParser.scala:947)
+	at scala.meta.internal.parsers.ScalametaParser.acceptStatSep(ScalametaParser.scala:957)
+	at scala.meta.internal.parsers.ScalametaParser.acceptStatSepOpt(ScalametaParser.scala:961)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:5060)
+	at scala.meta.internal.parsers.ScalametaParser.templateStats(ScalametaParser.scala:5130)
+	at scala.meta.internal.parsers.ScalametaParser.templateStatSeq(ScalametaParser.scala:5110)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateBody$1(ScalametaParser.scala:4945)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.templateBody(ScalametaParser.scala:4945)
+	at scala.meta.internal.parsers.ScalametaParser.templateBodyOpt(ScalametaParser.scala:4953)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateOpt$1(ScalametaParser.scala:4938)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:922)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:4923)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$objectDef$1(ScalametaParser.scala:4682)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.objectDef(ScalametaParser.scala:4674)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:4558)
+	at scala.meta.internal.parsers.ScalametaParser.defOrDclOrSecondaryCtor(ScalametaParser.scala:4201)
+	at scala.meta.internal.parsers.ScalametaParser.nonLocalDefOrDcl(ScalametaParser.scala:4172)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1$1.applyOrElse(ScalametaParser.scala:5120)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$templateStat$1$1.applyOrElse(ScalametaParser.scala:5114)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:5057)
+	at scala.meta.internal.parsers.ScalametaParser.templateStats(ScalametaParser.scala:5130)
+	at scala.meta.internal.parsers.ScalametaParser.templateStatSeq(ScalametaParser.scala:5110)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateBody$1(ScalametaParser.scala:4945)
+	at scala.meta.internal.parsers.ScalametaParser.inBraces(ScalametaParser.scala:800)
+	at scala.meta.internal.parsers.ScalametaParser.templateBody(ScalametaParser.scala:4945)
+	at scala.meta.internal.parsers.ScalametaParser.templateBodyOpt(ScalametaParser.scala:4953)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$templateOpt$1(ScalametaParser.scala:4938)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:922)
+	at scala.meta.internal.parsers.ScalametaParser.templateOpt(ScalametaParser.scala:4923)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$objectDef$1(ScalametaParser.scala:4682)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.objectDef(ScalametaParser.scala:4674)
+	at scala.meta.internal.parsers.ScalametaParser.tmplDef(ScalametaParser.scala:4558)
+	at scala.meta.internal.parsers.ScalametaParser.topLevelTmplDef(ScalametaParser.scala:4540)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$topStat$1.applyOrElse(ScalametaParser.scala:5079)
+	at scala.meta.internal.parsers.ScalametaParser$$anonfun$topStat$1.applyOrElse(ScalametaParser.scala:5067)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.meta.internal.parsers.ScalametaParser.statSeq(ScalametaParser.scala:5057)
+	at scala.meta.internal.parsers.ScalametaParser.topStatSeq(ScalametaParser.scala:5066)
+	at scala.meta.internal.parsers.ScalametaParser.bracelessPackageStats$1(ScalametaParser.scala:5289)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$12(ScalametaParser.scala:5295)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$batchSource$1(ScalametaParser.scala:5295)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:922)
+	at scala.meta.internal.parsers.ScalametaParser.batchSource(ScalametaParser.scala:5256)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$source$1(ScalametaParser.scala:5239)
+	at scala.meta.internal.parsers.ScalametaParser.atPos(ScalametaParser.scala:888)
+	at scala.meta.internal.parsers.ScalametaParser.autoPos(ScalametaParser.scala:922)
+	at scala.meta.internal.parsers.ScalametaParser.source(ScalametaParser.scala:5238)
+	at scala.meta.internal.parsers.ScalametaParser.entrypointSource(ScalametaParser.scala:5244)
+	at scala.meta.internal.parsers.ScalametaParser.$anonfun$parseSource$2(ScalametaParser.scala:143)
+	at scala.meta.internal.parsers.ScalametaParser.parseRule(ScalametaParser.scala:53)
+	at scala.meta.internal.parsers.ScalametaParser.parseSource(ScalametaParser.scala:143)
+	at scala.meta.parsers.Parse$.$anonfun$parseSource$1(Parse.scala:29)
+	at scala.meta.internal.parsers.ScalametaParser$$anon$264.apply(ScalametaParser.scala:5308)
+	at scala.meta.parsers.Api$XtensionParseDialectInput.parse(Api.scala:25)
+	at scala.meta.internal.semanticdb.scalac.ParseOps$XtensionCompilationUnitSource.toSource(ParseOps.scala:17)
+	at scala.meta.internal.semanticdb.scalac.TextDocumentOps$XtensionCompilationUnitDocument.toTextDocument(TextDocumentOps.scala:201)
+	at scala.meta.internal.pc.SemanticdbTextDocumentProvider.textDocument(SemanticdbTextDocumentProvider.scala:51)
+
+[0m2021.10.14 18:43:21 INFO  [info] loading settings for project blockbattle-build-build from metals.sbt ...[0m
+[0m2021.10.14 18:43:21 INFO  [info] loading project definition from C:\Users\hassa\blockbattle\project\project[0m
+[0m2021.10.14 18:43:25 INFO  [info] loading settings for project blockbattle-build from metals.sbt ...[0m
+[0m2021.10.14 18:43:25 INFO  [info] loading project definition from C:\Users\hassa\blockbattle\project[0m
+[0m2021.10.14 18:43:30 INFO  [success] Generated .bloop\blockbattle-build.json[0m
+[0m2021.10.14 18:43:30 INFO  [success] Total time: 5 s, completed Oct 14, 2021 6:43:30 PM[0m
+[0m2021.10.14 18:43:32 INFO  [info] loading settings for project blockbattle from build.sbt ...[0m
+[0m2021.10.14 18:43:32 INFO  [info] set current project to Hello (in build file:/C:/Users/hassa/blockbattle/)[0m
+[0m2021.10.14 18:43:32 INFO  [success] Generated .bloop\blockbattle-test.json[0m
+[0m2021.10.14 18:43:32 INFO  [success] Generated .bloop\blockbattle.json[0m
+[0m2021.10.14 18:43:32 INFO  [success] Total time: 0 s, completed Oct 14, 2021 6:43:32 PM[0m
+[0m2021.10.14 18:43:33 INFO  time: ran 'sbt bloopInstall' in 20s[0m
+[0m2021.10.14 18:43:33 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 25407'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.9...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading 2 projects from 'c:\Users\hassa\blockbattle\.bloop'...
+[0m[32m[D][0m Loading project from 'c:\Users\hassa\blockbattle\.bloop\blockbattle-test.json'
+[0m[32m[D][0m Loading project from 'c:\Users\hassa\blockbattle\.bloop\blockbattle.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:3.0.2.
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\core\jackson-annotations\2.2.3\jackson-annotations-2.2.3.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\core\jackson-core\2.9.8\jackson-core-2.9.8.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\core\jackson-databind\2.2.3\jackson-databind-2.2.3.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.9.8\jackson-dataformat-yaml-2.9.8.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\google\protobuf\protobuf-java\3.7.0\protobuf-java-3.7.0.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-anchorlink\0.42.12\flexmark-ext-anchorlink-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-autolink\0.42.12\flexmark-ext-autolink-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-emoji\0.42.12\flexmark-ext-emoji-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-gfm-strikethrough\0.42.12\flexmark-ext-gfm-strikethrough-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-gfm-tables\0.42.12\flexmark-ext-gfm-tables-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-gfm-tasklist\0.42.12\flexmark-ext-gfm-tasklist-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-ins\0.42.12\flexmark-ext-ins-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-superscript\0.42.12\flexmark-ext-superscript-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-tables\0.42.12\flexmark-ext-tables-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-wikilink\0.42.12\flexmark-ext-wikilink-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-ext-yaml-front-matter\0.42.12\flexmark-ext-yaml-front-matter-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-formatter\0.42.12\flexmark-formatter-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-html-parser\0.42.12\flexmark-html-parser-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-jira-converter\0.42.12\flexmark-jira-converter-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark-util\0.42.12\flexmark-util-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\com\vladsch\flexmark\flexmark\0.42.12\flexmark-0.42.12.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\net\java\dev\jna\jna\5.3.1\jna-5.3.1.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\nl\big-o\liqp\0.6.7\liqp-0.6.7.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\antlr\ST4\4.0.7\ST4-4.0.7.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\antlr\antlr-runtime\3.5.1\antlr-runtime-3.5.1.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\antlr\antlr\3.5.1\antlr-3.5.1.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jline\jline-reader\3.19.0\jline-reader-3.19.0.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jline\jline-terminal-jna\3.19.0\jline-terminal-jna-3.19.0.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jline\jline-terminal\3.19.0\jline-terminal-3.19.0.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\nibor\autolink\autolink\0.6.0\autolink-0.6.0.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\modules\scala-asm\9.1.0-scala-1\scala-asm-9.1.0-scala-1.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.6\scala-library-2.13.6.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-compiler_3\3.0.2\scala3-compiler_3-3.0.2.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-interfaces\3.0.2\scala3-interfaces-3.0.2.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-library_3\3.0.2\scala3-library_3-3.0.2.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-tasty-inspector_3\3.0.2\scala3-tasty-inspector_3-3.0.2.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scaladoc_3\3.0.2\scaladoc_3-3.0.2.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\tasty-core_3\3.0.2\tasty-core_3-3.0.2.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\compiler-interface\1.3.5\compiler-interface-1.3.5.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-sbt\util-interface\1.3.0\util-interface-1.3.0.jar
+[0m[32m[D][0m   => C:\Users\hassa\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\yaml\snakeyaml\1.23\snakeyaml-1.23.jar
+[0m[32m[D][0m Missing analysis file for project 'blockbattle'
+[0m[32m[D][0m Missing analysis file for project 'blockbattle-test'
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:25407...
+The server is listening for incoming connections at tcp://127.0.0.1:25407...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.14 18:43:49 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\hassa\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.14 18:43:49 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 43528'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:43528...
+The server is listening for incoming connections at tcp://127.0.0.1:43528...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.14 18:43:50 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\hassa\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.14 18:43:53 INFO  time: Connected to build server in 19s[0m
+[0m2021.10.14 18:43:53 INFO  Connected to Build server: Bloop v1.4.9[0m
+[0m2021.10.14 18:43:53 INFO  time: Imported build in 0.14s[0m
+[0m2021.10.14 18:43:59 INFO  time: indexed workspace in 5.76s[0m
+[0m2021.10.14 18:44:00 INFO  compiling blockbattle (6 scala sources)[0m
+[0m2021.10.14 18:44:00 INFO  no build target: using presentation compiler with only scala-library: 3.0.2[0m
+[0m2021.10.14 18:44:07 INFO  time: compiled blockbattle in 7.26s[0m
+Oct 14, 2021 6:45:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 44
+Oct 14, 2021 6:45:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 58
+Oct 14, 2021 6:45:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 75
+Oct 14, 2021 6:45:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 80
+Oct 14, 2021 6:45:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 85
+[0m2021.10.14 18:46:40 INFO  shutting down Metals[0m
+[0m2021.10.14 18:46:40 INFO  Shut down connection with build server.[0m
+[0m2021.10.14 18:46:40 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...

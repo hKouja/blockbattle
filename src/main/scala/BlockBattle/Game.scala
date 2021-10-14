@@ -1,7 +1,6 @@
 package BlockBattle
 
-import BlockBattle.Game.Color.{backgroundColorAtDepth, black, grass, mole, mole2, sky, soil, worm}
-import BlockBattle.Game.{windowSize, windowTitle}
+import BlockBattle.Game.Color.{black, grass, mole, mole2, sky, soil, worm}
 
 object Game {
   val windowSize = (30, 50)
@@ -15,19 +14,12 @@ object Game {
 
     val black  = new JColor (0, 0, 0)
     val mole   = new JColor (51, 51, 0)
-    val mole2  = new JColor (60, 60,0)
+    val mole2  = new JColor (60, 60, 60)
     val soil   = new JColor (153, 102, 51)
     val tunnel = new JColor (204, 153, 102)
     val grass  = new JColor (25, 130, 35)
     val sky    = new JColor (31, 190, 214)
     val worm   = new JColor (225, 100, 235)
-
-    def backgroundColorAtDepth (y: Int): java.awt.Color = {
-      if (Game.skyRange contains(y)) {Color.sky}
-      else if (Game.grassRange contains(y)) {Color.grass}
-      else Color.soil
-
-    }
   }
 }
 
@@ -42,40 +34,36 @@ class Game (
 
   val leftMole = new Mole (
     name = leftPlayerName,
-    Pos (1,2),
-    (1,0),
+    Pos (windowSize._1 * blockSize/ 2, windowSize._2 * blockSize /2),
+    dir = (1,0),
     Color.mole,
     KeyControl("a", "d", "w", "s")
   )
   val rightMole = new Mole (
     name = rightPlayerName,
     Pos (1,2),
-    (0,1),
+    dir = (1,1),
     Color.mole2,
     KeyControl("Left", "Right", "Up", "Down")
   )
 
+  def place(n: Int): Vector [(Int, Int)] = {
+    import scala.util.Random.nextInt
+    (for (i <- 1 to n) yield (
+      1 + nextInt(windowSize._1  * blockSize - 1),
+      grassRange.last + 1 + nextInt(windowSize._2 - (grassRange.last + 1))*blockSize)).toVector
+  }
 
+  def worm(xs: Vector[(Int, Int)]): Unit = {
+    for (i <- 0 until xs.length) {
+      val localPos: Pos = Pos(xs(i)._1, xs(i)._2)
+      window.setBlock(localPos, Color.worm)
+    }
+  }
 
   def eraseBlocks(mole: Mole)(x1: Int, y1: Int, x2: Int, y2: Int): Unit = {
     x1 == mole.pos.x
     y1 == mole.pos.y
-
-  }
-
-  def isHere(mole: Mole): Boolean = {
-
-    var xs = mole.pos.x
-    var ys = mole.pos.y
-
-    xs == windowSize._1
-    ys == windowSize._2
-    ys == skyRange.last
-    xs == 0
-  }
-
-  def worm(): Unit = {
-    window.setBlock(pos = Pos(1,2), Color.worm)
   }
 
   def paint(): Unit = {
@@ -96,12 +84,23 @@ class Game (
   }
 
   def update(mole: Mole): Unit = {
-    if (isHere(mole)) {mole.reverseDir()}
 
-    window.setBlock(mole.nextPos, mole.color)
+    if (mole.nextPos.x == windowSize._1 * blockSize) {
+      mole.reverseDir()
+    }
+    if (mole.nextPos.y == windowSize._2 * blockSize) {
+      mole.reverseDir()
+    }
+    if (mole.nextPos.y == skyRange.last * blockSize) {
+      mole.reverseDir()
+    }
+    if (mole.nextPos.x == - blockSize) {
+      mole.reverseDir()
+    }
+
     window.setBlock(mole.nextPos, Color.tunnel)
     mole.move()
-
+    window.setBlock(mole.nextPos, mole.color)
   }
 
   def handleEvents(): Unit = {
@@ -112,13 +111,13 @@ class Game (
           rightMole.setDir(key)
           leftMole.setDir(key)
         }
-        case BlockWindow.Event.WindowClosed => quit
+
       }
     }
   }
 
   var quit = false
-  val delayMillis = 80
+  val delayMillis = 100
 
   def gameLoop(): Unit = {
     while (!quit) {
@@ -138,6 +137,7 @@ class Game (
     println(s"$leftPlayerName ${leftMole.keyControl}")
     println(s"$rightPlayerName ${rightMole.keyControl}")
     drawWorld()
+    worm(place(6))
     gameLoop()
   }
 }

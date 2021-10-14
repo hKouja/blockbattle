@@ -12,6 +12,8 @@ class BlockWindow(
 
   def setBlock(pos: Pos, color: java.awt.Color): Unit = {
 
+    val x = blockSize * pos.x
+    val y = blockSize * pos.y
 
     pixelWindow.fill(pos.x, pos.y, blockSize, blockSize, color)
   }
@@ -24,8 +26,7 @@ class BlockWindow(
              text: String,
              pos: Pos,
              color: java.awt.Color,
-             textSize: Int = blockSize):
-  Unit = {
+             textSize: Int = blockSize): Unit = {
     pixelWindow.drawText(text, pos.x * blockSize, pos.y * blockSize, color, textSize)
   }
   
@@ -37,7 +38,7 @@ class BlockWindow(
       case PixelWindow.Event.WindowClosed => WindowClosed
       case _ => Undefined
   }
-    
+
 object BlockWindow {
   def delay(millis: Int): Unit = Thread.sleep(millis)
   object Event {

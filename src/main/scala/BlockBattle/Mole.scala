@@ -18,7 +18,7 @@ class Mole (
     dir = (-1 * dir._1, -1 * dir._2)
   }
 
-  def move (): Unit = {
+  def move(): Unit = {
     pos = nextPos
   }
 
