@@ -12,15 +12,11 @@ class BlockWindow(
 
   def setBlock(pos: Pos, color: java.awt.Color): Unit = {
 
-    val x = blockSize * pos.x
-    val y = blockSize * pos.y
-
-    pixelWindow.fill(pos.x, pos.y, blockSize, blockSize, color)
+    pixelWindow.fill(pos._1 * blockSize, pos._2 * blockSize, blockSize, blockSize, color)
   }
 
-  def getBlock(pos: Pos): java.awt.Color = {
-    pixelWindow.getPixel(pos.x * blockSize, pos.y * blockSize)
-  }
+  def getBlock(pos: Pos): java.awt.Color = pixelWindow.getPixel(pos._1 * blockSize, pos._2* blockSize)
+
 
   def write(
              text: String,
